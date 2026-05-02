@@ -1,0 +1,40 @@
+{
+  "name": "meeting-note-taker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome lint ./src",
+    "format": "biome format --write ./src",
+    "check": "biome check --write ./src"
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.0.0"
+  },
+  "dependencies": {
+    "@deepgram/sdk": "^3",
+    "@t3-oss/env-nextjs": "^0.12",
+    "clsx": "^2",
+    "date-fns": "^4",
+    "lucide-react": "^0.511",
+    "next": "16.2.4",
+    "openai": "^4",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "tailwind-merge": "^3",
+    "zod": "^3",
+    "zustand": "^5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

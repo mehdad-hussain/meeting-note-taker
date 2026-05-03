@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Activate class-based dark mode — Tailwind v4 syntax */
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

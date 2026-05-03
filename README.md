@@ -58,7 +58,7 @@ The browser streams audio **directly** to Deepgram's WebSocket API — no backen
 ### 1. Clone the repository
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/mehdad-hussain/meeting-note-taker.git
 cd meeting-note-taker
 ```
 

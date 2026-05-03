@@ -31,7 +31,7 @@ export function SummaryPanel() {
       });
 
       if (!res.ok) {
-        const data = (await res.json()) as { error?: string; };
+        const data = (await res.json()) as { error?: string };
         throw new Error(data.error ?? "Summary generation failed");
       }
 
@@ -76,7 +76,9 @@ export function SummaryPanel() {
             <h3 className="mb-1 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
               Summary
             </h3>
-            <p className="text-sm leading-relaxed text-gray-700 dark:text-gray-200">{summary.summary}</p>
+            <p className="text-sm leading-relaxed text-gray-700 dark:text-gray-200">
+              {summary.summary}
+            </p>
           </section>
 
           {summary.keyPoints.length > 0 && (

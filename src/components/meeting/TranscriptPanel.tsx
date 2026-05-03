@@ -18,10 +18,11 @@ export function TranscriptPanel() {
 
   const badge = (
     <span
-      className={`rounded-full px-2 py-0.5 text-xs font-medium ${status === "recording"
+      className={`rounded-full px-2 py-0.5 text-xs font-medium ${
+        status === "recording"
           ? "bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300"
           : "bg-gray-100 text-gray-500 dark:bg-gray-700 dark:text-gray-400"
-        }`}
+      }`}
     >
       {status === "recording" ? "● LIVE" : "Transcript"}
     </span>
@@ -43,7 +44,9 @@ export function TranscriptPanel() {
                 {seg.text}{" "}
               </span>
             ))}
-            {interimText && <span className="italic text-gray-400 dark:text-gray-500">{interimText}</span>}
+            {interimText && (
+              <span className="italic text-gray-400 dark:text-gray-500">{interimText}</span>
+            )}
           </>
         )}
         <div ref={bottomRef} />

@@ -30,6 +30,9 @@
             "suspicious": {
                 "noDebugger": "error"
             },
+            "nursery": {
+                "noProcessEnv": "error"
+            },
             "style": {
                 "useConst": "error",
                 "noVar": "error"

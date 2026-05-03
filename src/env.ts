@@ -9,6 +9,7 @@ export const env = createEnv({
     NEXT_PUBLIC_DEEPGRAM_API_KEY: z.string().min(1),
   },
   experimental__runtimeEnv: {
+    // biome-ignore lint/nursery/noProcessEnv: <explanation>
     NEXT_PUBLIC_DEEPGRAM_API_KEY: process.env.NEXT_PUBLIC_DEEPGRAM_API_KEY,
   },
 });
